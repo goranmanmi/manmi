@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Manmi Tube</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        #btn-mas{
+		display: none;
+	}
+	.container{
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+	}
+	.redes a, .icon-mas2{
+		display: block;
+		text-decoration: none;
+		background: #cc2b2b;
+		color: #fff;
+		width: 55px;
+		height: 55px;
+		line-height: 55px;
+		text-align: center;
+		border-radius: 50%;
+		box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+		transition: all 500ms ease;
+	}
+	.redes a:hover{
+		background: #fff;
+		color: #cc2b2b;
+	}
+	.redes a{
+		margin-bottom: -15px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-mas:checked~ .redes a{
+		margin-bottom: 10px;
+		opacity: 1;
+		visibility: visible;
+	}
+	.icon-mas2{
+		cursor: pointer;
+		background: #f44141;
+		font-size: 23px;
+	}
+	#btn-mas:checked ~ .btn-mas .icon-mas2{
+		transform: rotate(137deg);
+		font-size: 25px;
+	}
+    .backgrounds{
+        height: 120px;
+        margin: 10PX;
+       border: SOLID 1PX WHITE;
+     border-radius: 15PX 0px 15px 0px;
+     transition:  0.2s linear;
+     position: relative;
+    }
+    .backgrounds:hover{
+ 
+
+ border:solid 2px brown ;
+          border-radius: 0px 15px 0px 15px ; 
+          transition:  0.2s linear;
+    }  
+    h1{
+        text-align: center;
+        color:white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        animation-name: aaa;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+         
+          animation-timing-function:ease-in-out;
+    }
+
+    hr{
+        width: 500px;
+        align-items: center;
+        position: relative;
+    }
+    body{
+        background-color: #222222;
+        animation-name: aa;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function:linear;
+          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+button{
+           font-family: 'Arial Narrow', Arial, sans-serif;
+           color: white;
+           width: auto;
+           height: 20px;
+           padding: 10px;
+           position:unset;
+           animation-name: aa;
+          animation-duration: 2s;
+          
+          animation-iteration-count: infinite;
+          animation-timing-function:ease-in-out;
+           cursor:pointer;
+           margin:  auto;
+           transition:  0.2s linear;
+        background-color: rgba(0, 0, 0, 0.363); 
+        display: block;
+
+      }
+      button:hover{
+          border-top:solid 1px white;
+          border-bottom:solid 1px white;
+           color: teal;
+           box-shadow:  0 17px 30px 0 rgb(0, 0, 0);
+           font-size: 14px;
+           transition:  0.4s linear;
+           
+      }
+
+      .background{
+border-radius: 40px 0px 40px  0px;
+animation-name: aba;
+          animation-duration: 4s;
+          animation-iteration-count: 1;
+          animation-timing-function:ease-in-out;
+          border: dashed 1px white;
+          padding: 5px;
+          height: fit-content;
+          position: relative;
+          transition:  0.5s linear;
+          
+      }
+      .background:hover{
+          border-radius: 0px 40px 0px 40px;
+          transition: 0.5s linear;
+      }
+      .man{
+          font-size: 40px;
+          
+          color: brown;
+        animation-name: man;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function:ease-in;  
+      }
+      .mann{
+        animation-name: mann;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function:ease-in;  
+      }
+      @keyframes aa {
+          0% {border: dotted 1px white;}
+          25% {border:dotted 1px brown;}
+          50% {border:dotted 1px red;}
+          100% {border: dotted 1px white;}
+          
+      }
+      @keyframes aaa {
+          0% {opacity: 0%;}
+          25% {opacity: 100%;}
+         50% {opacity: 100%;}
+          100% {opacity: 0%;}
+      }
+      @keyframes aba {
+          0% {opacity: 0%;}
+          25% {opacity: 0%;}
+         50% {opacity: 100%;}
+          100% {opacity: 100%;}
+      }
+      @keyframes man {
+          0% {margin-left: -100%;
+        color: white;}
+
+          100% {margin-left: 0%;
+        color: brown;}
+      }
+      @keyframes mann {
+          0% {margin-right: -100%;
+        color: brown;}
+
+          100% {margin-right: 0%;
+        color: white;}
+      }
+
+      @media screen and (max-width:850px) {
+     button{
+            width: auto; 
+             margin: 20px;
+             height: auto;
+        }
+
+    
+        .background{
+             width: auto;
+             margin: 20px;
+             height: 90px;
+        }
+        .backgrounds{
+             width: auto;
+             margin: 10px;
+             height: 90px;
+        }
+        h1{
+             font-size: 25px;
+
+             
+        }
+
+   hr{
+       width: 80%;
+   }}
+    </style>
+</head>
+<body>
+    
+    <CENTER>
+
+    <h1 class="man">Goran</h1>
+    <h1 class="mann">Manmi</h1>
+    <hr>
+
+ <br><br>
+ <a href="https://www.youtube.com/channel/UCY3e0vijXKX9IAiFAqVrbkw/videos">   <img class="background"src="..\manmi\back\uu.jpg" alt=""></a>
+ <br> <br> <br> 
+ <a href="https://www.youtube.com/watch?v=h53CNry-z7k">   <img class="backgrounds"src="..\manmi\back\5sal.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=NzQMbTmEvbQ&t=2s">   <img class="backgrounds"src="..\manmi\back\ashqek.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Rb2jS_V0zeI">   <img class="backgrounds"src="..\manmi\back\2paza kewy.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=L8NQW3X0KjE">   <img class="backgrounds"src="..\manmi\back\ala w harem.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=wpraNsV8SV0">   <img class="backgrounds"src="..\manmi\back\amanj dakutin.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=_RN02ZoFI68">   <img class="backgrounds"src="..\manmi\back\amanj.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=6mCQxDfbjqc">   <img class="backgrounds"src="..\manmi\back\amny kushtwa aw qzh lwla.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=kv5nZLXBOQE">   <img class="backgrounds"src="..\manmi\back\amro jazhny zawaya.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=HrY5yK2A8wU">   <img class="backgrounds"src="..\manmi\back\ashqan qwrbany dan.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=-zKeLWtECD4">   <img class="backgrounds"src="..\manmi\back\ashqy to piry krdm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=kCMzhoqxyjU">   <img class="backgrounds"src="..\manmi\back\aw dl tangyay amrom.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=z5QWTL3p1cU">   <img class="backgrounds"src="..\manmi\back\aw katay kawtm kesha.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=lwv6qb-2qq8">   <img class="backgrounds"src="..\manmi\back\aw payama bo dwzhmn ba basar dly kawy.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=fY3Sm9ZRZak">   <img class="backgrounds"src="..\manmi\back\aw zhnay xoshmwisty.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=RU-Y84ZvnmI">   <img class="backgrounds"src="..\manmi\back\ba3zekm ehmal krdun zero hady.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=eU7glYHGmt4">   <img class="backgrounds"src="..\manmi\back\badiny didar.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=gqyN5F7tz7g&t=548s">   <img class="backgrounds"src="..\manmi\back\barham.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=0vzayYspygc">   <img class="backgrounds"src="..\manmi\back\basarhaty ganjy.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=W9wyrBG_LaQ">   <img class="backgrounds"src="..\manmi\back\basarhaty maw3id.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=yEtseVp5srM">   <img class="backgrounds"src="..\manmi\back\bawk amanj.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=2C8xXyJySBE">   <img class="backgrounds"src="..\manmi\back\bawk.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=UaElZa9ZILk">   <img class="backgrounds"src="..\manmi\back\belarws.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=txj-M0nUnaY">   <img class="backgrounds"src="..\manmi\back\blen ba yary be eman.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=5EhGLzBANsc">   <img class="backgrounds"src="..\manmi\back\bo para mny.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=XUvnUB3o9p0&t=107s">   <img class="backgrounds"src="..\manmi\back\bo para mni jehesht iran.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Sg02mzcWkxA">   <img class="backgrounds"src="..\manmi\back\bo wanakay wanakay.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=n1aASQZQs4Q">   <img class="backgrounds"src="..\manmi\back\bonaw zhyanm baxerbey zawa.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Xc0L7-N2sSc">   <img class="backgrounds"src="..\manmi\back\bradar arkan.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=bWsgloZlHzw">   <img class="backgrounds"src="..\manmi\back\bradar zero hady.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=arznRJzYYBU">   <img class="backgrounds"src="..\manmi\back\bradary mard.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=6x2vrkIV6SQ">   <img class="backgrounds"src="..\manmi\back\chon datwany jembele.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=vHf6pfvwlEA">   <img class="backgrounds"src="..\manmi\back\chuma jezhwany yarm halmgrt lasar jaday.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=g2WX4vKrQjU">   <img class="backgrounds"src="..\manmi\back\chy dktory dwnyaya.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=1U-2u_upu4c">   <img class="backgrounds"src="..\manmi\back\clip 1 million.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=O6bVZCWWkas">   <img class="backgrounds"src="..\manmi\back\da bgarewa.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Y8mYrtelYTE">   <img class="backgrounds"src="..\manmi\back\dachm ba mamay dalem.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=NITmJbN-tRo">   <img class="backgrounds"src="..\manmi\back\dagry chawanm iran.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=fA7u2esNud0">   <img class="backgrounds"src="..\manmi\back\daik didar.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=xFuthR8gWjM">   <img class="backgrounds"src="..\manmi\back\daik lam wlata.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=wYNKg0VQaOQ&t=101s">   <img class="backgrounds"src="..\manmi\back\daik.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=8-ax94OGpxk">   <img class="backgrounds"src="..\manmi\back\dalen jgara makesha.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=CtJ4KDaQdyI">   <img class="backgrounds"src="..\manmi\back\dardy dl lay ke bas bkam.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=WpZp5FpvodQ">   <img class="backgrounds"src="..\manmi\back\daway lebwrdn dakam didar.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=xvdVq4UYHB8">   <img class="backgrounds"src="..\manmi\back\disan royy bajey.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=ryq-OPvpljs">   <img class="backgrounds"src="..\manmi\back\dler garmyany badiny.jpg" alt=""></a>
+ <a href="youtube.com/watch?v=094A0MTJzLA">   <img class="backgrounds"src="..\manmi\back\dler garmyany.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=lAzlavKJMzg">   <img class="backgrounds"src="..\manmi\back\dlxosh dabm xoshhal dabm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Rtk1kFme-pw">   <img class="backgrounds"src="..\manmi\back\dukan.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=0tE0loWcChM">   <img class="backgrounds"src="..\manmi\back\ga3day sayara.jpg" alt=""></a>
+ 
+ <a href="https://www.youtube.com/watch?v=F3HoZAuZnas">   <img class="backgrounds"src="..\manmi\back\halparke buk w zawa qawayye.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=UYVmE8T4eiQ">   <img class="backgrounds"src="..\manmi\back\handek kas har xaryky gaibatn.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=q-q7bhMdEBM">   <img class="backgrounds"src="..\manmi\back\har ba nhene xoshmwist.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=-WegVA3pdLQ">   <img class="backgrounds"src="..\manmi\back\har ka la xaw haldastm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=6fkl-Cpcjic">   <img class="backgrounds"src="..\manmi\back\hardy salah.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=3U0PGBPpTeE">   <img class="backgrounds"src="..\manmi\back\hawler nury garmyany.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=KAppbXQLLEQ">   <img class="backgrounds"src="..\manmi\back\hazar wsham la dl daya.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=_PMrYwvZh5Y">   <img class="backgrounds"src="..\manmi\back\hazrafike lele.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=gp7P-MZQeVM">   <img class="backgrounds"src="..\manmi\back\ho nabe nabe.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=gBeHovid4I4">   <img class="backgrounds"src="..\manmi\back\iran ho kha jwanakay boakn.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=euJ1jvJ2Qqg">   <img class="backgrounds"src="..\manmi\back\jalal pareshan.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=uYxIoe-Xuf8">   <img class="backgrounds"src="..\manmi\back\jazhnt peroz.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=30DZoPkCbto">   <img class="backgrounds"src="..\manmi\back\jly kurdy arkan.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=qZ7hoRoXesE">   <img class="backgrounds"src="..\manmi\back\ka wafay to henda be.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=NzJSTmu361s">   <img class="backgrounds"src="..\manmi\back\kama kcha modela didar.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=zvF8w2VpFIY">   <img class="backgrounds"src="..\manmi\back\katana w katana.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=IySWDuxxVig">   <img class="backgrounds"src="..\manmi\back\klip la dwrit.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=PZVwf3neLzE">   <img class="backgrounds"src="..\manmi\back\kwa qwtaby smaily.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=ns84u6ExBRM">   <img class="backgrounds"src="..\manmi\back\lawanaya natwanm didar.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=zSSd-sOHOgY">   <img class="backgrounds"src="..\manmi\back\lawo lawo.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=G0nzhQp2O7A">   <img class="backgrounds"src="..\manmi\back\maltan la slemanya.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=uKlijsGcURs">   <img class="backgrounds"src="..\manmi\back\mawayaka be dangm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=fbv6jXvpQUk">   <img class="backgrounds"src="..\manmi\back\mawayaka yarakam.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=u-uEQ_-usvc&t=436s">   <img class="backgrounds"src="..\manmi\back\mn qalam.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=5oCGh1Vxz4I">   <img class="backgrounds"src="..\manmi\back\mrurakan.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=qNJh6j8RNzY">   <img class="backgrounds"src="..\manmi\back\namay danard pr azar bw.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=YOcxDV1hqSY">   <img class="backgrounds"src="..\manmi\back\nura zawa ba bwke dale.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=qcUQEorQnuQ">   <img class="backgrounds"src="..\manmi\back\pand.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=UtWgnUcRWCQ">   <img class="backgrounds"src="..\manmi\back\pashayy.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=b-5EkV9CEFw">   <img class="backgrounds"src="..\manmi\back\pr ba dli xom halmbzhardy.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=U07d5AjpsTY">   <img class="backgrounds"src="..\manmi\back\prpr haby xaw.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=DKuTf3_n4RA">   <img class="backgrounds"src="..\manmi\back\pyawy maslah chim nawe.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=VZgTrs-is9U">   <img class="backgrounds"src="..\manmi\back\qawayy.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=E1C24V16Qy0">   <img class="backgrounds"src="..\manmi\back\rawchhim daykam rawy sher didar.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=FKdzZh7ra4g">   <img class="backgrounds"src="..\manmi\back\regakam dwr xstawa.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=XqWETPdJLsI">   <img class="backgrounds"src="..\manmi\back\roishty bajet hesthm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=icM-VKjMCd0">   <img class="backgrounds"src="..\manmi\back\rojava.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Jtq-KYsQ6jQ">   <img class="backgrounds"src="..\manmi\back\rq la har kas halgrm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Qmq5SZGVEYM">   <img class="backgrounds"src="..\manmi\back\safa barz.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=uOMjybjgeXI">   <img class="backgrounds"src="..\manmi\back\sal sal.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=pqUXFVAV1O4">   <img class="backgrounds"src="..\manmi\back\shara shara.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=BOp6a3vkI_Y">   <img class="backgrounds"src="..\manmi\back\shary sherenm hawler.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=Fm_29yMkoEI">   <img class="backgrounds"src="..\manmi\back\snap zina.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=1JDpHjh_sdg">   <img class="backgrounds"src="..\manmi\back\talafonm bo yar krd.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=7uq-a8N8y1w">   <img class="backgrounds"src="..\manmi\back\taza yarekm grtwa didar.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=ZcseIcAio_Y">   <img class="backgrounds"src="..\manmi\back\to la mstaway mn ny.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=f4cg_S6bmRw">   <img class="backgrounds"src="..\manmi\back\to lakwey iran.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=cZh2N2lojJE">   <img class="backgrounds"src="..\manmi\back\valantien.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=W8t3mLPwxgw">   <img class="backgrounds"src="..\manmi\back\wallahy kas wakw to ley naya jly kurdi.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=THipttk9UBU&t=16s">   <img class="backgrounds"src="..\manmi\back\xanm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=5Tq8tYjH0uA">   <img class="backgrounds"src="..\manmi\back\xom daidanem snurm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=OzLh6gHa1IU">   <img class="backgrounds"src="..\manmi\back\xom nazanm chim ley dawe.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=JhKBjB3Sm6c">   <img class="backgrounds"src="..\manmi\back\xoshawistit lagal mn.jpg" alt=""></a>
+
+ <a href="https://www.youtube.com/watch?v=iM1eScFRQQ8">   <img class="backgrounds"src="..\manmi\back\yak nigay wak terek bw.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=KmKJhK2Cztk">   <img class="backgrounds"src="..\manmi\back\yar bom nabw lele rsm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=z4UxODpjkL8">   <img class="backgrounds"src="..\manmi\back\yar bw law regayawa.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=yQq1HLyiJhA">   <img class="backgrounds"src="..\manmi\back\yar jey heshtm roy bo.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=fwLK67IFaDk">   <img class="backgrounds"src="..\manmi\back\yar la mahad detawa.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=460UVNVEWXg">   <img class="backgrounds"src="..\manmi\back\yaxwa baqqwrbant bm.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=YzckXxJhWCY">   <img class="backgrounds"src="..\manmi\back\zhyany wazyry.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=u5VqyO1kyLk">   <img class="backgrounds"src="..\manmi\back\zor hawlmda labirtkam.jpg" alt=""></a>
+ <a href="https://www.youtube.com/watch?v=gjdCyDa9Dgs">   <img class="backgrounds"src="..\manmi\back\zor kas la dawry mn bwn.jpg" alt=""></a>
+
+ 
+
+
+
+
+ <br><br><br>
+ <a href="..\manmi\index.html"> <button>Home Page</button></a><br>
+ <a href="https://www.snapchat.com/add/amanjybnasllawa"> <button>Created By</button></a>
+    <br>
+    <br>
+</CENTER>
+<div class="container">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+    <a href="https://www.facebook.com/goran.luqman.5" class="fab fa-facebook"></a>
+    <a href="https://www.instagram.com/goran__manmy/" class="fab fa-instagram"></a>
+    <a href="https://www.snapchat.com/add/goranmanmi21" class="fab fa-snapchat"></a>
+    
+    </div>
+    
+    <div class="btn-mas">
+    
+    <label for="btn-mas" class="icon-mas2"><b>+</b></label>
+    
+    </div>
+</body>
+</html>
